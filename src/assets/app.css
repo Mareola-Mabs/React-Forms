@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    gap: 15px;
+    box-shadow: 5px 5px 5px rgba(146, 143, 143, 0.1), -5px -5px 5px rgba(255, 255, 255, 0.7);
+    background: rgb(242, 239, 239);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form h2{
+    text-align: center;
+    color: #333;
+}
+
+.container{
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+button{
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 750px) {
+    .parent{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
